@@ -3,7 +3,8 @@ scipy
 numba
 
 pytest
+pytest-cov
+
 autopep8
 pylint
-pytest-cov
 flake8
