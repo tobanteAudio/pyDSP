@@ -23,7 +23,7 @@ test:
 
 .PHONY:
 lint:
-	# @flake8 $(PACKAGE_NAME) $(TEST_DIRECTORY) examples
+	@flake8 $(PACKAGE_NAME) $(TEST_DIRECTORY) examples
 	@pylint --disable=fixme $(PACKAGE_NAME) $(TEST_DIRECTORY)
 
 
