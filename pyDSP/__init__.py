@@ -1,1 +1,1 @@
-from .parameter import *
+from .parameter import EffectParameter

@@ -6,3 +6,4 @@ pytest
 autopep8
 pylint
 pytest-cov
+flake8
