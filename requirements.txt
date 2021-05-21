@@ -2,5 +2,7 @@ numpy
 scipy
 numba
 
+pytest
 autopep8
 pylint
+pytest-cov

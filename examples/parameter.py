@@ -1,3 +1,3 @@
 import pyDSP as dsp
 
-print(dsp.RangedParameter('test', 'Test'))
+print(dsp.EffectParameter('test', 'Test'))

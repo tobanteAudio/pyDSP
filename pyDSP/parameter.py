@@ -2,7 +2,7 @@ import types
 import abc
 
 
-class RangedParameter:
+class EffectParameter:
     def __init__(self, id: str, name: str) -> None:
         self._id = id
         self._name = name
@@ -14,3 +14,8 @@ class RangedParameter:
     @property
     def name(self) -> str:
         return self._name
+
+    @property
+    @abc.abstractmethod
+    def value(self):
+        pass
