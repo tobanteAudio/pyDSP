@@ -3,7 +3,7 @@ TEST_DIRECTORY = tests
 DOC_DIRECTORY = docs
 
 .PHONY:
-default: develop test
+default: clean test lint
 
 .PHONY:
 install:

@@ -3,7 +3,7 @@
 import abc
 
 
-class EffectParameter:
+class AudioProcessorParameter:
     '''Base class for all parameter types
     '''
 

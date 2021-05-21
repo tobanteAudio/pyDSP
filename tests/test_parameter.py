@@ -1,7 +1,7 @@
 # pylint: skip-file
 import pytest
 
-from dsp import EffectParameter
+from dsp import AudioProcessorParameter
 
 
 @pytest.mark.parametrize("test_case, expected", [
@@ -11,7 +11,7 @@ from dsp import EffectParameter
     ('baz', 'baz'),
 ])
 def test_effect_parameter_identifier(test_case, expected):
-    param = EffectParameter(test_case, '')
+    param = AudioProcessorParameter(test_case, '')
     assert param.identifier == expected
 
 
@@ -22,5 +22,5 @@ def test_effect_parameter_identifier(test_case, expected):
     ('baz', 'baz'),
 ])
 def test_effect_parameter_name(test_case, expected):
-    param = EffectParameter('', test_case)
+    param = AudioProcessorParameter('', test_case)
     assert param.name == expected

@@ -1,6 +1,6 @@
 '''Audio DSP utility classes and functions
 '''
-from .parameter import EffectParameter
+from .parameter import AudioProcessorParameter
 
 
-__all__ = ['EffectParameter', ]
+__all__ = ['AudioProcessorParameter', ]

@@ -1,3 +1,3 @@
 import dsp
 
-print(dsp.EffectParameter('test', 'Test'))
+print(dsp.AudioProcessorParameter('test', 'Test'))
