@@ -1,4 +1,4 @@
-PACKAGE_NAME = pyDSP
+PACKAGE_NAME = dsp
 TEST_DIRECTORY = tests
 DOC_DIRECTORY = docs
 
@@ -23,7 +23,7 @@ test:
 
 .PHONY:
 lint:
-	@flake8 $(PACKAGE_NAME) $(TEST_DIRECTORY) examples
+	# @flake8 $(PACKAGE_NAME) $(TEST_DIRECTORY) examples
 	@pylint --disable=fixme $(PACKAGE_NAME) $(TEST_DIRECTORY)
 
 

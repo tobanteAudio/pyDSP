@@ -1,7 +1,7 @@
 # pylint: skip-file
 import pytest
 
-from pyDSP import EffectParameter
+from dsp import EffectParameter
 
 
 @pytest.mark.parametrize("test_case, expected", [
@@ -10,9 +10,9 @@ from pyDSP import EffectParameter
     ('bar', 'bar'),
     ('baz', 'baz'),
 ])
-def test_effect_parameter_id(test_case, expected):
+def test_effect_parameter_identifier(test_case, expected):
     param = EffectParameter(test_case, '')
-    assert param.id == expected
+    assert param.identifier == expected
 
 
 @pytest.mark.parametrize("test_case, expected", [
