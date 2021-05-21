@@ -4,32 +4,33 @@ import pytest
 import dsp
 
 
-@pytest.mark.parametrize("test_case, expected", [
-    ('test', 'test'),
-    ('foo', 'foo'),
-    ('bar', 'bar'),
-    ('baz', 'baz'),
+@pytest.mark.parametrize("test_case", [
+    ('test'),
+    ('foo'),
+    ('bar'),
+    ('baz'),
 ])
-def test_effect_parameter_identifier(test_case, expected):
-    param = dsp.AudioParameter(test_case, '')
-    assert param.identifier == expected
+def test_audio_parameter_identifier(test_case):
+    param = dsp.AudioParameter(test_case, 'name')
+    assert param.identifier == test_case
 
 
-@pytest.mark.parametrize("test_case, expected", [
-    ('test', 'test'),
-    ('foo', 'foo'),
-    ('bar', 'bar'),
-    ('baz', 'baz'),
+@pytest.mark.parametrize("test_case", [
+    ('test'),
+    ('foo'),
+    ('bar'),
+    ('baz'),
 ])
-def test_effect_parameter_name(test_case, expected):
-    param = dsp.AudioParameter('', test_case)
-    assert param.name == expected
+def test_audio_parameter_name(test_case):
+    param = dsp.AudioParameter('id', test_case)
+    assert param.name == test_case
 
 
-@pytest.mark.parametrize("test_case, expected", [
-    (False, False),
-    (False, False),
+@pytest.mark.parametrize("test_case", [
+    (False),
+    (True),
 ])
-def test_effect_bool_parameter_value(test_case, expected):
+def test_audio_parameter_bool_value(test_case):
     param = dsp.AudioParameterBool('id', 'name', test_case)
-    assert param.value == expected
+    assert param.value == test_case
+    assert param.default_value == test_case

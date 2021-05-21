@@ -46,13 +46,13 @@ class AudioParameterBool(AudioParameter):
         self._default_value = default_val
 
     @property
-    def value(self):
+    def value(self) -> bool:
         '''Returns the current value
         '''
         return self._value
 
     @property
-    def default_value(self):
+    def default_value(self) -> bool:
         '''Returns the default value
         '''
         return self._default_value
