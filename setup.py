@@ -15,5 +15,5 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": "https://github.com/tobanteAudio/pyDSP/issues",
     },
-    python_requires=">=3.8",
+    python_requires=">=3.7",
 )
