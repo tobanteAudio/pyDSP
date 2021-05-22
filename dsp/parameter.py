@@ -51,6 +51,12 @@ class AudioParameterBool(AudioParameter):
         '''
         return self._value
 
+    @value.setter
+    def value(self, newValue: bool) -> None:
+        '''Sets the parameter to True or False
+        '''
+        self._value = newValue
+
     @property
     def default_value(self) -> bool:
         '''Returns the default value
