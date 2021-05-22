@@ -30,6 +30,9 @@ lint:
 	@flake8 $(PACKAGE_NAME) $(TEST_DIRECTORY) examples
 	@pylint --disable=fixme $(PACKAGE_NAME) $(TEST_DIRECTORY)
 
+.PHONY: docs
+docs:
+	$(MAKE) -C docs html
 
 .PHONY: clean
 clean:

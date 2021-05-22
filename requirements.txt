@@ -1,10 +1,18 @@
+# REQUIRED
 numpy
 scipy
 numba
 
+# TEST
 pytest
 pytest-cov
 
+# LINT
 autopep8
 pylint
 flake8
+
+# DOCUMENTATION
+sphinx
+recommonmark
+doc8
